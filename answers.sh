@@ -41,4 +41,22 @@ on employees.Company = companies.Name
 WHERE employees.Role = "Graphic Designer";
 
 
+# Count & Filter
 
+1- SELECT name, max(Points) AS `cnt`
+FROM students 
+GROUP BY name
+ORDER BY `cnt` DESC
+LIMIT 3
+
+2- SELECT avg(Points)
+from students
+
+3- SELECT count(name)
+from students
+where Points = 500
+
+4- SELECT name FROM students
+WHERE name LIKE '%s%'
+
+5- SELECT * FROM students ORDER BY Points DESC;
