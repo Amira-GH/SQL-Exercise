@@ -21,3 +21,24 @@ CREATE TABLE graduates (
 
 3- DELETE from students where Name="Layal";
 
+#JOINS
+
+1- SELECT employees.Name, employees.Company, companies.Date
+from employees
+INNER JOIN companies
+on employees.Company = companies.Name;
+
+2- SELECT employees.Name
+from employees
+INNER JOIN companies
+on employees.Company = companies.Name
+WHERE companies.Date < 2000;
+
+3- SELECT employees.Company
+from employees
+INNER JOIN companies
+on employees.Company = companies.Name
+WHERE employees.Role = "Graphic Designer";
+
+
+
